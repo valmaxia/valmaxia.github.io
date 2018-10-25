@@ -1,0 +1,402 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+header {
+	max-width: 1920px;
+	min-height: 995px;
+	text-align: center;
+	margin:0 auto;
+	background: url(../img/header.jpg) center top/cover;
+	border-bottom:1px solid #00a388;
+}
+header h1 {
+	margin: 0;
+	text-transform: capitalize;
+	color:#f1f2f1;
+	font-size: 108px;
+	font-weight: normal;
+	font-family: 'Signika', sans-serif;
+	padding-top: 470px;
+}
+header h3 {
+	margin-top: 64px;
+	color:#f1f2f1;
+	font-size: 48px;
+	text-transform: capitalize;
+	font-family: 'Signika', sans-serif;
+	margin-bottom: 0;
+}
+header h5 {
+	text-transform: uppercase;
+	font-family: 'Signika', sans-serif;
+	color:#f1f2f1;
+	font-size: 18px;
+	margin-top: 15px;
+}
+.menu {
+	max-width: 1920px;
+	min-height: 67px;
+	margin:0 auto;
+	text-align: center;
+	background: #00a388;
+}
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	min-height: 67px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.menu a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#f1f2f1;
+	font-size: 18px;
+}
+.menu a:after {
+	content:"//";
+	margin:0 15px;
+}
+.menu li:last-child a:after {
+	content:"";
+	display: none;
+}
+.about {
+	max-width: 1920px;
+	margin:0 auto;
+	text-align: center;
+	padding:100px 0;
+}
+section h2 {
+	font-size: 48px;
+	color:#140e1d;
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin:0 0 25px;
+}
+section h2:after {
+	content:"...";
+	display: block;
+}
+.h6 {
+	font-size: 16px;
+	font-family: 'Signika', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin:25px 0 60px;
+}	
+.text {
+	max-width: 1400px;
+	margin:0 auto;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.text p {
+	max-width: 640px;
+	text-align: left;
+	font-size: 14px;
+	line-height: 30px;
+}
+.team {
+	max-width: 1400px;
+	margin:100px auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.man {
+	width: 270px;
+	height: 535px;
+}
+.man h5 {
+	font-size: 18px;
+	color:#000;
+	font-family: 'Signika', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin:0 0 30px;
+}
+.prof {
+	font-size: 16px;
+	font-family: 'Signika', sans-serif;
+}
+.man-text {
+	padding:30px 20px 20px;
+	box-sizing: border-box;
+}
+.man:hover .man-text {
+	background: #00a388;
+	color:#fff;
+}
+.man:hover h5 {
+	color:#fff;
+}
+.man p {
+	text-align: left;
+	display: none;
+}
+.man:hover p {
+	display: block;
+	font-size: 12px;
+	line-height: 21px;
+}
+.soc {
+	display: none;
+}
+.man:hover .soc {
+	display: block;
+}
+.soc a {
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background: #fff;
+	border-radius:2px;
+	color:#00a388;
+	margin:0 8px;
+}
+.man img {
+	display: block;
+}
+.portfolio {
+	max-width: 1920px;
+	margin:0 auto;
+	text-align: center;
+	padding:100px 0;
+}
+.portfolio-menu {
+	margin-bottom: 80px;
+}
+.portfolio-menu a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#000;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: 'Signika', sans-serif;
+}
+.portfolio-menu a:after {
+	content:"//";
+	display: inline-block;
+	margin:0 11px;
+}
+.portfolio-menu a:last-child:after {
+	display: none;
+}
+.portfolio-block {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.portfolio-block a {
+	width: 25%;
+	position: relative;
+}
+.portfolio-block img {
+	width: 100%;
+	max-width: 100%;
+	height:auto;
+	display: block;
+}
+.mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background: rgba(0,163,136,0.7);
+	color:#fff;
+	text-transform: uppercase;
+	transition: 0.6s;
+	transform: scale(0);
+}
+.mask h4 {
+	margin: 0;
+	padding-top: 70px;
+}
+.mask h6 {
+	margin: 0;
+	padding:30px 0;
+}
+.mask i {
+	font-size: 40px;
+}
+.portfolio-block a:hover .mask {
+	transform: scale(1);
+}
+.service h2 {
+	text-align: center;
+}
+.h6 {
+	text-align: center;
+}
+.container-service {
+	max-width: 1400px;
+	margin:0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.service-item {
+	width: 50%;
+	margin-bottom: 90px;
+	padding-right: 50px;
+	box-sizing: border-box;
+}
+.service-img {
+	display: block;
+	width: 113px;
+	height: 113px;
+	background: #00a388;
+	text-align: center;
+	line-height: 160px;
+}
+.service-item h5 {
+	font-size: 36px;
+	color: #140e1d;
+	font-weight: normal;
+	margin:25px 0 0;
+	font-family: 'Signika' ,sans-serif;
+}
+.service-item p {
+	color:#333;
+	font-size: 14px;
+	line-height: 30px;
+}
+.blog {
+	background: #ecfffc;
+	margin:0 auto;
+	text-align: center;
+	padding:100px 0;
+	max-width: 1920px;
+}
+.blog-container {
+	max-width: 1400px;
+	margin:0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.blog-container article {
+	width: 300px;
+	margin:0 18px 35px;
+	text-align: left;
+	background: #fff;
+	overflow: hidden;
+}
+.category {
+	color: #00a388;
+	margin:35px 0 35px;
+}
+article h4 {
+	font-family: 'Signika', sans-serif;
+	font-size: 28px;
+	line-height: 35px;
+	font-weight: normal;
+	margin: 0 0 35px;
+	padding: 0 30px;
+}
+article p {
+	font-size: 16px;
+	line-height: 28px;
+	padding: 0 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*медиа-запросы*/
+
+@media(max-width: 1400px) {
+	.text {
+		flex-direction: column;
+		align-items: center;
+		padding:0 10px;
+	}
+	.portfolio-block a {
+		width: 33%;
+	}
+}
+
+@media(max-width: 1200px) {
+	header h1 {
+		padding-top: 100px;
+	}
+	header {
+		min-height: auto;
+		padding-bottom: 40px;
+	}
+	.team .man {
+		margin:30px 100px;
+	}
+	.team {
+		justify-content: center;
+	}
+}
+
+@media(max-width: 1000px) {
+	.portfolio-block a {
+		width: 50%;
+	}
+	.service-item {
+		width: 100%;
+		padding-left: 20px;
+	}
+}
+
+@media(max-width: 950px) {
+	header h1 {
+		font-size: 70px;
+		padding-top: 30px;
+	}
+	header h3 {
+		margin-top: 30px;
+	}
+	.portfolio-menu a {
+		display: block;
+		line-height: 35px;
+	}
+	.portfolio-menu a:after {
+		display: none;
+	}
+}
+
+@media(max-width: 700px) {
+	.portfolio-block a {
+		width: 100%;
+	}
+	.menu ul {
+		flex-direction: column;
+	}
+	.menu li {
+		line-height: 40px;
+	}
+	.menu a:after {
+		display: none;
+	}
+}
+
+@media(max-width: 400px) {
+	header h5 {
+		font-size: 14px;
+	}
+}
+
+
+
+
+/*1. Зажимаем Ctrl+Alt и правой кнопкой кликаем на нужную картинку(так мы находим слой)
+2. Нажимаем на найденный слой правой кнопкой и выбираем Создать дубликат слоя
+3. В окне выбираем в поле Документ-Новый в поле имя пишем имя будущей картинки
+4. Чтобы отрезать прозрачные части от картинки, выбираем Изображение-Тримминг и нажимаем ОК.
+5. Сохраняем картинку как jpg или png(если на картинке присутствуют прозрачные части)*/
